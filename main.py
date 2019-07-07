@@ -14,7 +14,6 @@ from modules.neuro import main as neuro
 from modules.location import main as locations
 # /import
 
-
 def input_url(message):
     answer = price_checking.save_item_url(message)
     bot.send_message(message.chat.id,answer)
@@ -160,7 +159,3 @@ while True:
         logger.log(e)
         print(e)
         time.sleep(15)
-
-
-
-
