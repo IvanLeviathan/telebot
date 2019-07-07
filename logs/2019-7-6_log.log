@@ -1,0 +1,54 @@
+2019-7-6 23:6:15 
+list index out of range
+
+2019-7-6 23:6:30 
+list index out of range
+
+2019-7-6 23:6:45 
+list index out of range
+
+2019-7-6 23:7:0 
+list index out of range
+
+2019-7-6 23:8:6 
+list index out of range
+
+2019-7-6 23:8:21 
+list index out of range
+
+2019-7-6 23:8:37 
+list index out of range
+
+2019-7-6 23:9:13 
+list index out of range
+
+2019-7-6 23:11:46 
+{'content_type': 'text', 'message_id': 2715, 'from_user': {'id': 447900956, 'is_bot': False, 'first_name': 'Heh', 'username': 'memphias', 'last_name': 'Mda', 'language_code': 'ru'}, 'date': 1562443906, 'chat': {'type': 'private', 'last_name': 'Mda', 'first_name': 'Heh', 'username': 'memphias', 'id': 447900956, 'title': None, 'all_members_are_administrators': None, 'photo': None, 'description': None, 'invite_link': None, 'pinned_message': None, 'sticker_set_name': None, 'can_set_sticker_set': None}, 'forward_from_chat': None, 'forward_from': None, 'forward_date': None, 'reply_to_message': None, 'edit_date': None, 'media_group_id': None, 'author_signature': None, 'text': '¿Ô', 'entities': None, 'caption_entities': None, 'audio': None, 'document': None, 'photo': None, 'sticker': None, 'video': None, 'video_note': None, 'voice': None, 'caption': None, 'contact': None, 'location': None, 'venue': None, 'new_chat_member': None, 'new_chat_members': None, 'left_chat_member': None, 'new_chat_title': None, 'new_chat_photo': None, 'delete_chat_photo': None, 'group_chat_created': None, 'supergroup_chat_created': None, 'channel_chat_created': None, 'migrate_to_chat_id': None, 'migrate_from_chat_id': None, 'pinned_message': None, 'invoice': None, 'successful_payment': None, 'connected_website': None, 'json': {'message_id': 2715, 'from': {'id': 447900956, 'is_bot': False, 'first_name': 'Heh', 'last_name': 'Mda', 'username': 'memphias', 'language_code': 'ru'}, 'chat': {'id': 447900956, 'first_name': 'Heh', 'last_name': 'Mda', 'username': 'memphias', 'type': 'private'}, 'date': 1562443906, 'text': '¿Ô'}}
+
+2019-7-6 23:12:28 
+list index out of range
+
+2019-7-6 23:30:44 
+'NoneType' object has no attribute 'text'
+
+2019-7-6 23:30:44 
+'NoneType' object has no attribute 'text'
+
+2019-7-6 23:30:45 
+'NoneType' object has no attribute 'text'
+
+2019-7-6 23:30:45 
+'NoneType' object has no attribute 'text'
+
+2019-7-6 23:30:45 
+'NoneType' object has no attribute 'text'
+
+2019-7-6 23:51:8 
+list index out of range
+
+2019-7-6 23:56:12 
+[Errno 2] No such file or directory: 'D:\\PycharmProjects\\telegram/modules/location/files/newsSubs.json'
+
+2019-7-6 23:57:10 
+[Errno 2] No such file or directory: 'D:\\PycharmProjects\\telegram/modules/location/files/newsSubs.json'
+
