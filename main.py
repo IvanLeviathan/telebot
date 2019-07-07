@@ -26,7 +26,7 @@ def input_index_of_url(message):
     logger.consoleLog(message, answer)
 
 
-apihelper.proxy = {'https':'http://209.97.173.141:8080'}
+#apihelper.proxy = {'https':'http://209.97.173.141:8080'}
 #= немецкий прокси
 bot = telebot.TeleBot(constants.token, threaded=False)
 
@@ -164,7 +164,3 @@ while True:
         logger.log(e)
         print(e)
         time.sleep(15)
-
-
-
-
