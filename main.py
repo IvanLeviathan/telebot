@@ -14,6 +14,7 @@ from modules.neuro import main as neuro
 from modules.location import main as locations
 # /import
 
+
 def input_url(message):
     answer = price_checking.save_item_url(message)
     bot.send_message(message.chat.id,answer)
@@ -25,7 +26,7 @@ def input_index_of_url(message):
     logger.consoleLog(message, answer)
 
 
-#apihelper.proxy = {'https':'http://130.211.83.74:3128'}
+apihelper.proxy = {'https':'http://209.97.173.141:8080'}
 #= немецкий прокси
 bot = telebot.TeleBot(constants.token, threaded=False)
 
@@ -127,7 +128,11 @@ def handle_command(message):
 def handle_command(message):
     bot.send_chat_action(message.chat.id, "typing")
     answer = news.subscribeNews(message.chat.id)
-    bot.send_message(message.chat.id, answer)
+    sendAnswer(message, answer)
+
+    if (type(answer) is dict and answer['type'] == 'chooseRegion'):
+        bot.register_next_step_handler(message, saveUserNewsRegion)
+
     logger.consoleLog(message, answer)
 
 @bot.message_handler(commands=["news_unsub"])
@@ -159,3 +164,7 @@ while True:
         logger.log(e)
         print(e)
         time.sleep(15)
+
+
+
+

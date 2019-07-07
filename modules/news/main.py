@@ -20,10 +20,14 @@ def sendNews(bot):
 
     if contents:
         object = json.loads(contents)
-        newsList = getNews()
+
         for chat_id in object:
-            bot.send_message(chat_id, newsList)
-            print("Отправили новости " + str(chat_id))
+            userLocation = locations.getParseLink('news', chat_id);
+            if('link' in userLocation):
+                newsList = getNews(chat_id)
+
+                bot.send_message(chat_id, newsList)
+                print("Отправили новости " + str(chat_id))
 
 
 def getNews(chat_id):
@@ -57,6 +61,11 @@ def getNews(chat_id):
 
 
 def subscribeNews(chat_id):
+
+    userLocation = locations.getParseLink('news', chat_id);
+    if ('keyboard' in userLocation):
+        return userLocation
+
     if (path.isfile(modulesConstants["subscribersList"])):
         jsonFile = open(modulesConstants["subscribersList"], "r+")
     else:
