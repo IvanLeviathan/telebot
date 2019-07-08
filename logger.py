@@ -12,10 +12,11 @@ class logger:
             logFile = open(logFileName, "a")
         else:
             logFile = open(logFileName, "w")
+		try:
+			logFile.write("{0}-{1}-{2} {3}:{4}:{5} \n".format(d_now.year, d_now.month, d_now.day, d_now.hour, d_now.minute,d_now.second) + str(msg) + "\n\n")
+	        logFile.close()
+		except Exception as e:
 
-        logFile.write("{0}-{1}-{2} {3}:{4}:{5} \n".format(d_now.year, d_now.month, d_now.day, d_now.hour, d_now.minute,d_now.second) + str(msg) + "\n\n")
-
-        logFile.close()
 
     def consoleLog(message, answer):
         print("\n=========")
