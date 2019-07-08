@@ -8,15 +8,15 @@ class logger:
 
         logFileName = sys.path[0] + "\logs\{0}-{1}-{2}_log.log".format(d_now.year, d_now.month, d_now.day)
 
-        if (path.isfile(logFileName)):
+        #if (path.isfile(logFileName)):
             # logFile = open(logFileName, "a")
-        else:
+        # else:
             # logFile = open(logFileName, "w")
-        try:
+        # try:
             # logFile.write("{0}-{1}-{2} {3}:{4}:{5} \n".format(d_now.year, d_now.month, d_now.day, d_now.hour, d_now.minute,d_now.second) + str(msg) + "\n\n")
             # logFile.close()
-        except Exception as e:
-            print(e)
+        # except Exception as e:
+            # print(e)
 
     def consoleLog(message, answer):
         print("\n=========")
