@@ -1,3 +1,3 @@
-token = "653303659:AAEfe3zhvu0WJhLIcF5IOxwAwxQoY7GLA4Y"
+token = <TELEGRAM_BOT_API_KEY>
 loopStarted = False
-adminChatID = 447900956
+adminChatID = <YOUR_CHAT_ID_WITH_THIS_BOT>
